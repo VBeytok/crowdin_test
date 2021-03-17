@@ -22,9 +22,11 @@ jobs:
     steps:
 
     - name: Checkout
+      if: env.CROWDIN_API_TOKEN != null
       uses: actions/checkout@v2
 
     - name: crowdin-action
+      if: env.CROWDIN_API_TOKEN != null
       # You need to pin to a specific version for some reason...
       uses: crowdin/github-action@1.0.19
       with:
