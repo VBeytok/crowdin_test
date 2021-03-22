@@ -6,14 +6,10 @@ global $forum_copyright, $webmaster_email, $scripturl, $context, $boardurl;
 // Native name, please use full HTML entities to write your language's name.
 $txt['native_name'] = 'English';
 
-// Locale (strftime, pspell_new) and spelling. (pspell_new, can be left as '' normally.)
-// For more information see:
-//   - https://php.net/function.pspell-new
+// Locale (strftime, basename). For more information see:
 //   - https://php.net/function.setlocale
-// Again, SPELLING SHOULD BE '' 99% OF THE TIME!!  Please read this!
 $txt['lang_locale'] = 'en_US';
 $txt['lang_dictionary'] = 'en';
-$txt['lang_spelling'] = 'american';
 //https://developers.google.com/recaptcha/docs/language
 $txt['lang_recaptcha'] = 'en';
 
@@ -412,7 +408,6 @@ $txt['two_weeks'] = '2 Weeks';
 $txt['one_month'] = '1 Month';
 $txt['two_months'] = '2 Months';
 $txt['forever'] = 'Forever';
-$txt['quick_login_dec'] = 'Login with username, password and session length';
 $txt['moved'] = 'MOVED';
 $txt['move_why'] = 'Please enter a brief description as to<br>why this topic is being moved.';
 $txt['board'] = 'Board';
